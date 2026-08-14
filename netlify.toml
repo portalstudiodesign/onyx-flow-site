@@ -1,0 +1,28 @@
+# Deploy config for the Onyx Flow site.
+# The site is plain static files — there is nothing to build.
+
+[build]
+  publish = "."
+  command = ""
+
+# Long cache for fingerprint-free static media; short cache for the HTML so
+# copy edits go live immediately.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+
+# Google Play wants a stable privacy-policy URL. Keep /privacy working even if
+# someone drops the .html.
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200

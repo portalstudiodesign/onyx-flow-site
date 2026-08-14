@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="52%" stop-color="#4275f5" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#4275f5" stop-opacity=".6"/>
+    </radialGradient>
+    <radialGradient id="orb" cx="36%" cy="28%" r="72%">
+      <stop offset="0%" stop-color="#3d4e78"/>
+      <stop offset="45%" stop-color="#12101f"/>
+      <stop offset="100%" stop-color="#05040c"/>
+    </radialGradient>
+    <linearGradient id="crystal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d3b6ff"/>
+      <stop offset="100%" stop-color="#7a45d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#09080f"/>
+  <circle cx="32" cy="32" r="28" fill="url(#halo)"/>
+  <circle cx="32" cy="32" r="22" fill="url(#orb)"/>
+  <circle cx="32" cy="32" r="22" fill="none" stroke="#85dbff" stroke-opacity=".55" stroke-width="1.4"/>
+  <path d="M32 20 l7 8 -7 16 -7 -16 z" fill="url(#crystal)"/>
+  <path d="M32 20 l7 8 -7 4 -7 -4 z" fill="#e6d6ff" fill-opacity=".65"/>
+  <ellipse cx="24" cy="21" rx="7" ry="4" fill="#bfe4ff" fill-opacity=".35" transform="rotate(-32 24 21)"/>
+</svg>

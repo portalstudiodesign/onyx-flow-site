@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Onyx Flow — Every Move Matters</title>
+<meta name="description" content="A premium block puzzle for Android. Clear lines to charge the Flow meter, hold it with clean play, and every point you score is multiplied. No timers, no lives, no paywalls.">
+<meta name="theme-color" content="#09080f">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Onyx Flow — Every Move Matters">
+<meta property="og:description" content="A premium block puzzle for Android. Clear lines to charge the Flow meter, hold it with clean play, and every point you score is multiplied.">
+<meta property="og:image" content="assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<div class="backdrop"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <defs>
+          <radialGradient id="hl" cx="50%" cy="50%" r="50%">
+            <stop offset="55%" stop-color="#4275f5" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#4275f5" stop-opacity=".55"/>
+          </radialGradient>
+          <radialGradient id="orb" cx="36%" cy="28%" r="72%">
+            <stop offset="0%" stop-color="#3d4e78"/>
+            <stop offset="45%" stop-color="#12101f"/>
+            <stop offset="100%" stop-color="#05040c"/>
+          </radialGradient>
+          <linearGradient id="cry" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#d3b6ff"/>
+            <stop offset="100%" stop-color="#7a45d6"/>
+          </linearGradient>
+        </defs>
+        <circle cx="32" cy="32" r="30" fill="url(#hl)"/>
+        <circle cx="32" cy="32" r="23" fill="url(#orb)"/>
+        <circle cx="32" cy="32" r="23" fill="none" stroke="#85dbff" stroke-opacity=".55" stroke-width="1.2"/>
+        <path d="M32 20 l7 8 -7 16 -7 -16 z" fill="url(#cry)"/>
+        <path d="M32 20 l7 8 -7 4 -7 -4 z" fill="#e6d6ff" fill-opacity=".65"/>
+        <ellipse cx="24" cy="21" rx="7" ry="4" fill="#bfe4ff" fill-opacity=".35" transform="rotate(-32 24 21)"/>
+      </svg>
+      <span class="wordmark"><b>ONYX</b> <i>FLOW</i></span>
+    </a>
+    <nav>
+      <a href="#flow" class="hide-xs">The Flow</a>
+      <a href="#features" class="hide-sm">Features</a>
+      <a href="#screens">Screens</a>
+      <a href="#skins" class="hide-sm">Skins</a>
+      <a href="#press" class="hide-sm">Press</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="pill"><span class="dot"></span> In development — Android</span>
+        <h1>ONYX FLOW</h1>
+        <p class="tagline">Every Move Matters</p>
+        <p class="lede">
+          A block puzzle with a state to chase. Clear lines and the Flow meter charges;
+          keep the board open and each clear is worth more. Reach Flow and the board turns to
+          crystal — a current running through everything you built, multiplying every point
+          you score until you let it slip.
+        </p>
+        <div class="hero-cta">
+          <span class="btn" aria-disabled="true">
+            <svg width="18" height="20" viewBox="0 0 24 26" aria-hidden="true"><path fill="currentColor" d="M3 1.4v23.2c0 .6.5 1 1 .7l13.6-11.1c.5-.4.5-1.1 0-1.5L4 1.6c-.4-.3-1 0-1 .8Z" opacity=".85"/></svg>
+            Coming to Google Play
+          </span>
+          <a class="btn ghost" href="#flow">See how Flow works</a>
+        </div>
+        <p class="small" style="margin-top:22px">
+          Free · Ad-supported · No lives · No timers · Plays offline
+        </p>
+      </div>
+
+      <div class="phone hero-phone">
+        <div class="screen">
+          <video src="assets/hero-loop.mp4" poster="assets/hero-poster.webp"
+                 autoplay muted loop playsinline preload="metadata"
+                 aria-label="Gameplay: a combo clears a line, the Flow meter fills and the board crystallizes."></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ================= FLOW ================= -->
+  <section id="flow">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">The signature mechanic</p>
+        <h2>Flow is earned, never bought.</h2>
+        <p class="lede">
+          Most block puzzles end when the board fills. Onyx Flow adds one thing on top of the
+          classic rules — a meter that only good play can charge, and that only good play can hold.
+        </p>
+      </div>
+
+      <div class="flow-grid">
+        <ol class="steps reveal">
+          <li>
+            <strong>Clears charge it</strong>
+            <p>Only line clears feed the meter, and bigger clears pay far more than
+               single ones. A move that clears nothing gives you nothing.</p>
+          </li>
+          <li>
+            <strong>Clean boards multiply it</strong>
+            <p>How much open, connected space you leave behind decides how much each clear
+               is worth. Elegance can't charge the meter on its own — but it makes every hit count.</p>
+          </li>
+          <li>
+            <strong>Flow crystallizes the board</strong>
+            <p>The board becomes one living crystal and a current runs through everything
+               that's connected. Stranded islands stay dark — the mechanic teaches itself.</p>
+          </li>
+          <li>
+            <strong>Holding it is the skill</strong>
+            <p>Flow ebbs a little with every move. Keep the clears coming and it lasts;
+               drift for a few moves and you watch it fade.</p>
+          </li>
+          <li>
+            <strong>Each one is rarer — and richer</strong>
+            <p>The next Flow in a run is always harder to reach than the last, and always
+               pays more. That turns a run into a chase instead of a restart.</p>
+          </li>
+        </ol>
+
+        <div class="meter-mock reveal">
+          <div class="meter-label"><span>Flow</span><span class="x" id="mult">×1.25</span></div>
+          <div class="meter">
+            <div class="track"></div>
+            <div class="fill" id="fill"></div>
+            <div class="orb" id="flowOrb"></div>
+          </div>
+          <div class="ladder" id="ladder">
+            <div class="rung on">×1.25<span>1st</span></div>
+            <div class="rung">×1.5<span>2nd</span></div>
+            <div class="rung">×1.75<span>3rd</span></div>
+            <div class="rung">×2.0<span>4th</span></div>
+            <div class="rung">×2.25<span>5th</span></div>
+          </div>
+          <p class="small" style="margin:22px 0 0">
+            The onyx marker rides the track as the meter charges. Reach the fifth Flow of a run
+            and every point you score is worth more than double.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ================= FEATURES ================= -->
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">What's in it</p>
+        <h2>Classic rules. Everything around them, rebuilt.</h2>
+        <p class="lede">
+          Drag pieces onto an 8×8 board, fill a row or a column, watch it clear. Nothing about
+          that changes — the depth is in what the game does with your decisions.
+        </p>
+      </div>
+
+      <div class="grid cols-3">
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#85dbff" stroke-width="1.8"><path d="M4 7h6v6H4zM14 4h6v6h-6zM14 14h6v6h-6zM4 17h6v3H4z"/></svg></div>
+          <h3>Hold, and use it live</h3>
+          <p>Park an awkward piece for later — then drag it straight out of the hold slot onto
+             the board when the gap finally appears. No duplication, no cooldown.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#ffcf70" stroke-width="1.8"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></div>
+          <h3>Combos with names</h3>
+          <p>Chain clears and the run announces itself — IGNITION, HOT, OVERDRIVE, NOVA.
+             Each tier is louder than the last, in sound, light and score.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#9e70f5" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+          <h3>One daily board for everyone</h3>
+          <p>The daily challenge is generated from the date itself, so every player in the
+             world gets exactly the same pieces in exactly the same order. Same board, same odds.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#52db8f" stroke-width="1.8"><path d="M4 12l5 5L20 6"/></svg></div>
+          <h3>Missions and a forgiving streak</h3>
+          <p>A fresh set of missions every day, and a streak that survives real life — miss a
+             day and a banked grace token covers you instead of wiping weeks of play.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#85dbff" stroke-width="1.8"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L3.3 9.4l6.1-.8z"/></svg></div>
+          <h3>Awards, stats and skins</h3>
+          <p>Seventeen achievements, a full statistics wall, and four hand-built piece finishes —
+             one of which can show up unannounced the moment you clear the board.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#ffcf70" stroke-width="1.8"><path d="M7 3h10a1 1 0 0 1 1 1v17l-6-4.2L6 21V4a1 1 0 0 1 1-1z"/></svg></div>
+          <h3>Picks up where you left off</h3>
+          <p>Close the app mid-run and the exact board comes back. Every game is stored as a
+             seed plus your moves, so it can be replayed move for move.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ================= BOARD MOCKUP ================= -->
+  <section>
+    <div class="wrap flow-grid">
+      <div class="reveal">
+        <p class="eyebrow">The feel</p>
+        <h2>Glass you want to touch.</h2>
+        <p class="lede">
+          Every block, every glow and every particle in the game is generated in code at
+          startup — no stock art, no asset-store filler. The result is a 26 MB download that
+          holds 60 frames a second on a mid-range phone, and a board that lights up like
+          jewellery when a line goes.
+        </p>
+        <p class="small" style="margin-top:20px">Cathedral, not casino. The celebration never gets in the way of the next move.</p>
+      </div>
+      <div class="reveal" style="display:grid;place-items:center">
+        <div class="board-mock" id="board" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ================= SCREENS ================= -->
+  <section id="screens">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Screens</p>
+        <h2>Captured on a real device.</h2>
+        <p class="lede">Samsung Galaxy A25, running the build as it stands today.</p>
+      </div>
+      <div class="gallery reveal">
+        <figure>
+          <div class="phone"><div class="screen"><img src="assets/shot-menu.webp" alt="The Onyx Flow main menu: best score, streak, daily challenge and today's missions." loading="lazy" width="784" height="1600"></div></div>
+          <figcaption>Menu, daily and missions</figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><div class="screen"><img src="assets/shot-ignition.webp" alt="A row clearing in gold with the IGNITION combo callout on screen." loading="lazy" width="784" height="1600"></div></div>
+          <figcaption>IGNITION — the chain begins</figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><div class="screen"><img src="assets/shot-hot.webp" alt="A column igniting white at combo five, with the HOT callout." loading="lazy" width="784" height="1600"></div></div>
+          <figcaption>HOT — five clears deep</figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><div class="screen"><img src="assets/shot-flow.webp" alt="Flow activating: the board crystallizes and the word FLOW floods the screen." loading="lazy" width="784" height="1600"></div></div>
+          <figcaption>Flow, the moment it lands</figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><div class="screen"><img src="assets/shot-crystal.webp" alt="The board mid-Flow, lit from within, with the onyx marker far along the Flow track." loading="lazy" width="784" height="1600"></div></div>
+          <figcaption>Holding it, board lit</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ================= SKINS ================= -->
+  <section id="skins">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Four finishes</p>
+        <h2>The same board, in four materials.</h2>
+        <p class="lede">
+          Every skin is generated in code, not painted — same silhouettes, same readable
+          colours, a completely different surface. Switch whenever you like in Settings.
+        </p>
+      </div>
+      <div class="gallery skins reveal">
+        <figure>
+          <div class="phone"><div class="screen"><img src="assets/skin-1.webp" alt="The board rendered in the Classic skin: soft, matte jewel blocks." loading="lazy" width="784" height="1600"></div></div>
+          <figcaption><b>Classic</b><span>Soft matte jewels</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><div class="screen"><img src="assets/skin-2.webp" alt="The board rendered in the Glassmorphism skin: translucent glass blocks." loading="lazy" width="784" height="1600"></div></div>
+          <figcaption><b>Glassmorphism</b><span>Translucent glass</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><div class="screen"><img src="assets/skin-3.webp" alt="The board rendered in the Neon skin: blocks lit from within." loading="lazy" width="784" height="1600"></div></div>
+          <figcaption><b>Neon</b><span>Lit from within</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><div class="screen"><img src="assets/skin-4.webp" alt="The board rendered in the Holographic skin: pearlescent, colour-shifting blocks." loading="lazy" width="784" height="1600"></div></div>
+          <figcaption><b>Holographic</b><span>Pearlescent shift</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ================= PROMISE ================= -->
+  <section>
+    <div class="wrap">
+      <div class="promise reveal">
+        <p class="eyebrow">The design promise</p>
+        <h2 style="max-width:26ch">Nothing in this game is designed to wear you down.</h2>
+        <p class="lede" style="margin-top:18px">
+          The game is free and ad-supported. Beyond that, every mechanic that pressures players
+          into paying was considered and turned down on purpose — what's left has to earn its
+          place by being good to play.
+        </p>
+        <ul class="promise-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#52db8f" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg><span><b>No continues to buy.</b> When the run ends, it ends.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#52db8f" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg><span><b>No energy, no lives.</b> Play for a minute or an hour.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#52db8f" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg><span><b>No paid rerolls.</b> The pieces you get are the pieces you play.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#52db8f" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg><span><b>No streak insurance for sale.</b> Grace is earned by playing.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#52db8f" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg><span><b>No account, no sign-up.</b> Open the app and play.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#52db8f" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg><span><b>Your progress stays on your phone.</b> No profile, no cloud — see the <a href="privacy.html">privacy policy</a>.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRESS ================= -->
+  <section id="press">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Fact sheet</p>
+        <h2>For press and creators.</h2>
+      </div>
+      <dl class="facts reveal">
+        <div><dt>Developer</dt><dd>Portal Design Studio</dd></div>
+        <div><dt>Platform</dt><dd>Android (phone)</dd></div>
+        <div><dt>Engine</dt><dd>Unity 6</dd></div>
+        <div><dt>Download size</dt><dd>≈ 26 MB</dd></div>
+        <div><dt>Price</dt><dd>Free, ad-supported</dd></div>
+        <div><dt>Players</dt><dd>Single player</dd></div>
+        <div><dt>Connection</dt><dd>Plays offline</dd></div>
+        <div><dt>Release</dt><dd>To be announced</dd></div>
+      </dl>
+      <p class="small" style="margin-top:26px">
+        Press kit, key art and capture footage on request — write to
+        <a href="mailto:portaldesignstudios@gmail.com">portaldesignstudios@gmail.com</a>.
+      </p>
+
+      <div class="studio reveal">
+        <img src="assets/studio-emblem.webp" alt="Portal Design Studio" width="320" height="320" loading="lazy">
+        <div>
+          <p class="eyebrow" style="margin-bottom:6px">The studio</p>
+          <h3 style="margin-bottom:8px">Portal Design Studio</h3>
+          <p class="small" style="margin:0">
+            Onyx Flow is built by Portal Design Studio — one developer, no publisher,
+            every block and every sound generated in code.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <span class="wordmark" style="font-size:15px"><b>ONYX</b> <i>FLOW</i></span>
+      <p class="small" style="margin:8px 0 0">Every Move Matters</p>
+    </div>
+    <div class="links">
+      <a href="#flow">The Flow</a>
+      <a href="#features">Features</a>
+      <a href="#screens">Screens</a>
+      <a href="#skins">Skins</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:portaldesignstudios@gmail.com">Contact</a>
+    </div>
+    <p class="small" style="margin:0">© <span id="yr">2026</span> Portal Design Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* ---- scroll reveal ---- */
+  var items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !reduced) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -12% 0px' });
+    items.forEach(function (el) { io.observe(el); });
+  } else {
+    items.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* ---- flow meter demo: charge, hold, drop, climb the ladder ---- */
+  var fill = document.getElementById('fill');
+  var orb = document.getElementById('flowOrb');
+  var mult = document.getElementById('mult');
+  var rungs = document.querySelectorAll('#ladder .rung');
+  var labels = ['×1.25', '×1.5', '×1.75', '×2.0', '×2.25'];
+  var step = 0, running = false;
+
+  /* the marker rides the track with the charge, as it does in the game */
+  function charge(pct) {
+    fill.style.width = pct + '%';
+    orb.style.left = pct + '%';
+  }
+
+  function cycle() {
+    if (reduced) { charge(100); return; }
+    charge(18 + Math.random() * 14);
+    setTimeout(function () { charge(52 + Math.random() * 12); }, 1200);
+    setTimeout(function () { charge(100); }, 2500);
+    setTimeout(function () {
+      rungs.forEach(function (r, i) { r.classList.toggle('on', i === step); });
+      mult.textContent = labels[step];
+      step = (step + 1) % labels.length;
+    }, 3600);
+    setTimeout(function () { charge(0); }, 5200);
+    setTimeout(cycle, 6600);
+  }
+
+  var meter = document.querySelector('.meter-mock');
+  if (meter && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (e) {
+      if (e[0].isIntersecting && !running) { running = true; cycle(); }
+    }, { threshold: .3 }).observe(meter);
+  } else { cycle(); }
+
+  /* ---- board mockup: fills a row, ignites it, clears it ---- */
+  var board = document.getElementById('board');
+  if (board) {
+    var COLS = 8, ROWS = 8, hues = ['c-blue', 'c-cyan', 'c-green', 'c-coral', 'c-gold', 'c-violet'];
+    var cells = [];
+    for (var i = 0; i < COLS * ROWS; i++) {
+      var d = document.createElement('div');
+      d.className = 'cell';
+      board.appendChild(d);
+      cells.push(d);
+    }
+
+    function paint(i, hue) { cells[i].className = 'cell f ' + hue; }
+    function clearCell(i) { cells[i].className = 'cell'; }
+
+    /* a hand-placed opening so the mock always reads like a real board */
+    var seed = [
+      [40, 3], [41, 3], [48, 0], [49, 0], [50, 2], [56, 0], [57, 4], [58, 2], [59, 1],
+      [33, 5], [34, 5], [42, 1], [43, 1], [51, 1], [52, 2], [60, 2], [61, 0], [62, 3]
+    ];
+    seed.forEach(function (s) { paint(s[0], hues[s[1]]); });
+
+    if (!reduced) {
+      var row = 7, order = [63, 55, 47, 39, 38, 46, 54, 53, 45, 44, 37, 36, 35, 32];
+      var t = 0;
+
+      function loop() {
+        /* fill the last gaps of the bottom row */
+        [63, 55].forEach(function (i, n) {
+          setTimeout(function () { paint(i, hues[(n + 4) % hues.length]); }, 400 + n * 420);
+        });
+        /* ignite the row */
+        setTimeout(function () {
+          for (var c = 0; c < COLS; c++) cells[row * COLS + c].classList.add('hot');
+        }, 1500);
+        /* clear it */
+        setTimeout(function () {
+          for (var c = 0; c < COLS; c++) clearCell(row * COLS + c);
+        }, 1900);
+        /* rebuild the row for the next pass */
+        setTimeout(function () {
+          [[56, 0], [57, 4], [58, 2], [59, 1], [60, 2], [61, 0], [62, 3]].forEach(function (s) {
+            paint(s[0], hues[s[1]]);
+          });
+        }, 3200);
+        setTimeout(loop, 5200);
+      }
+
+      if ('IntersectionObserver' in window) {
+        var started = false;
+        new IntersectionObserver(function (e) {
+          if (e[0].isIntersecting && !started) { started = true; loop(); }
+        }, { threshold: .35 }).observe(board);
+      } else { loop(); }
+    }
+  }
+})();
+</script>
+</body>
+</html>

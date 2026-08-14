@@ -53,19 +53,19 @@ Then open <http://localhost:4321>.
 
 ## Live site
 
-**<https://portalstudiodesign.github.io/onyx-flow/>**
+**<https://portalstudiodesign.github.io/onyx-flow-site/>**
 
 Privacy policy URL for the Play Console listing — use the full path, GitHub Pages has no
 redirect layer:
 
 ```
-https://portalstudiodesign.github.io/onyx-flow/privacy.html
+https://portalstudiodesign.github.io/onyx-flow-site/privacy.html
 ```
 
 ## Publishing an update
 
-The folder is its own git repo (`portalstudiodesign/onyx-flow`), separate from the parent
-directory — the parent's `.gitignore` ignores it, so the game source can never be pushed by
+The folder is its own git repo (`portalstudiodesign/onyx-flow-site` — deliberately *not* named
+`onix-flow`, which is the private repo), separate from the parent directory — the parent's `.gitignore` ignores it, so the game source can never be pushed by
 accident. Edit the files, then:
 
 ```bash

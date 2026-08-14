@@ -51,21 +51,40 @@ python -m http.server 4321 --directory onyxflow-site
 
 Then open <http://localhost:4321>.
 
-## Deploy (Netlify)
+## Live site
 
-The repository root is already linked to a *different* Netlify site, so create a new one rather
-than deploying into that link:
+**<https://portalstudiodesign.github.io/onyx-flow/>**
 
-```bash
-netlify sites:create --name onyx-flow
+Privacy policy URL for the Play Console listing — use the full path, GitHub Pages has no
+redirect layer:
+
+```
+https://portalstudiodesign.github.io/onyx-flow/privacy.html
 ```
 
+## Publishing an update
+
+The folder is its own git repo (`portalstudiodesign/onyx-flow`), separate from the parent
+directory — the parent's `.gitignore` ignores it, so the game source can never be pushed by
+accident. Edit the files, then:
+
 ```bash
-netlify deploy --dir=onyxflow-site --prod --site onyx-flow
+git -C onyxflow-site add -A && git -C onyxflow-site commit -m "Update copy" && git -C onyxflow-site push
 ```
 
-Drag-and-drop onto <https://app.netlify.com/drop> works just as well — the folder is
-self-contained. Any static host (GitHub Pages, Cloudflare Pages, Vercel) will serve it as-is.
+GitHub Pages rebuilds in roughly a minute. `.nojekyll` is present so files are served exactly as
+committed.
+
+## Moving to a custom domain later
+
+1. Buy the domain, then add a `CNAME` file to this repo containing just the domain.
+2. At the registrar, point the apex at GitHub's IPs (`185.199.108–111.153`) or add a
+   `CNAME` record for `www` → `portalstudiodesign.github.io`.
+3. In the repo's Settings → Pages, set the custom domain and tick "Enforce HTTPS".
+4. **Update the privacy-policy URL in the Play Console listing** to the new domain.
+
+`netlify.toml` is kept in the repo for the day you move to Netlify instead; it has no effect on
+GitHub Pages, which is why the `/privacy` shortcut does not work there.
 
 ## Where the assets came from
 

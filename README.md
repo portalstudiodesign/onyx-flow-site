@@ -20,6 +20,19 @@ assets/         real captures from the Galaxy A25 build + the Open Graph card
    `<span class="btn">Coming to Google Play</span>` in the hero for a real `<a>` to the listing,
    and drop the "In development" pill.
 2. Set `og:url` / a canonical link once the final domain is known.
+3. **The launch countdown.** The hero shows a days/hours/minutes counter beside the Play
+   button. Its target is hard-coded in the inline script at the bottom of `index.html`:
+
+   ```js
+   var target = new Date('2026-09-02T09:20:00+03:00').getTime();
+   ```
+
+   That is 14 days from the start of closed testing (25 testers, started 19 August 2026 at
+   09:20 Romanian time). The offset is written out explicitly, so the counter reads the same
+   in every timezone; Romania stays on UTC+3 until the last Sunday of October. When the date
+   passes, the counter hides itself and the page simply reads "Coming to Google Play" — so a
+   slipped launch degrades quietly rather than showing zeroes. Change the date there if the
+   window moves, and delete the `.countdown` block once the game is actually live.
 
 ## The privacy policy and the ads
 

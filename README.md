@@ -18,7 +18,7 @@ assets/         real captures from the Galaxy A25 build + the Open Graph card
 
 1. **Store link.** When the game is live, swap the disabled
    `<span class="btn">Coming to Google Play</span>` in the hero for a real `<a>` to the listing,
-   and drop the "In development" pill.
+   and drop the "In closed testing" pill.
 2. Set `og:url` / a canonical link once the final domain is known.
 3. **The launch countdown.** The hero shows a days/hours/minutes counter beside the Play
    button. Its target is hard-coded in the inline script at the bottom of `index.html`:

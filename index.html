@@ -69,7 +69,7 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="pill"><span class="dot"></span> In closed testing — Android</span>
+        <span class="pill"><span class="dot"></span> Out now — Android</span>
         <h1>ONYX FLOW</h1>
         <p class="tagline">Every Move Matters</p>
         <p class="lede">
@@ -79,16 +79,10 @@
           you score until you let it slip.
         </p>
         <div class="hero-cta">
-          <span class="btn" aria-disabled="true">
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.portaldesignstudio.onyxflow">
             <svg width="18" height="20" viewBox="0 0 24 26" aria-hidden="true"><path fill="currentColor" d="M3 1.4v23.2c0 .6.5 1 1 .7l13.6-11.1c.5-.4.5-1.1 0-1.5L4 1.6c-.4-.3-1 0-1 .8Z" opacity=".85"/></svg>
-            Coming to Google Play
-          </span>
-
-          <div class="countdown" id="countdown" hidden>
-            <div class="cd-cell"><b id="cd-d">--</b><span>days</span></div>
-            <div class="cd-cell"><b id="cd-h">--</b><span>hrs</span></div>
-            <div class="cd-cell"><b id="cd-m">--</b><span>min</span></div>
-          </div>
+            Get it on Google Play
+          </a>
 
           <a class="btn ghost" href="#flow">See how Flow works</a>
         </div>
@@ -358,7 +352,7 @@
         <div><dt>Price</dt><dd>Free, ad-supported</dd></div>
         <div><dt>Players</dt><dd>Single player</dd></div>
         <div><dt>Connection</dt><dd>Plays offline</dd></div>
-        <div><dt>Release</dt><dd>To be announced</dd></div>
+        <div><dt>Release</dt><dd>2 September 2026</dd></div>
       </dl>
       <p class="small" style="margin-top:26px">
         Press kit, key art and capture footage on request — write to
@@ -403,31 +397,6 @@
 (function () {
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.getElementById('yr').textContent = new Date().getFullYear();
-
-  /* ---- launch countdown ----
-     Anchored to an absolute instant with an explicit offset, so it reads the
-     same wherever the visitor is. Romania is on EEST (UTC+3) through October. */
-  var cdEl = document.getElementById('countdown');
-  if (cdEl) {
-    var target = new Date('2026-09-02T09:20:00+03:00').getTime();
-    var cdD = document.getElementById('cd-d');
-    var cdH = document.getElementById('cd-h');
-    var cdM = document.getElementById('cd-m');
-    var pad = function (n) { return n < 10 ? '0' + n : String(n); };
-
-    var tick = function () {
-      var left = target - Date.now();
-      if (left <= 0) { cdEl.hidden = true; clearInterval(timer); return; }
-      var mins = Math.floor(left / 60000);
-      cdD.textContent = String(Math.floor(mins / 1440));
-      cdH.textContent = pad(Math.floor((mins % 1440) / 60));
-      cdM.textContent = pad(mins % 60);
-      cdEl.hidden = false;
-    };
-
-    tick();
-    var timer = setInterval(tick, 1000);
-  }
 
   /* ---- scroll reveal ---- */
   var items = document.querySelectorAll('.reveal');

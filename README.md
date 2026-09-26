@@ -71,7 +71,7 @@ and a consent flow for EEA/UK players.
 ## Features
 
 Hold slot · tiered combos · Flow multiplier · daily challenges · daily missions · 17 achievements ·
-statistics and streaks · four board finishes · fully offline, no account needed.
+statistics and streaks · four board finishes · plays offline, no account needed.
 
 ---
 

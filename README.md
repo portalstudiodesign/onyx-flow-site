@@ -35,27 +35,14 @@ No timers, no lives, no paywalls.
 The game rules know nothing about Unity. They live in assemblies compiled with `noEngineReferences`, so the
 compiler itself stops engine code leaking into the logic — and the rules can be tested in milliseconds.
 
-```mermaid
-flowchart TD
-    Core["Nova.Core<br/>value types: grid positions, piece shapes, scoring settings"]
-    Domain["Nova.Domain<br/>board, placement, line clears, combos, Flow, scoring, game session"]
-    Data["Nova.Data<br/>ScriptableObject configuration"]
-    Gameplay["Nova.Gameplay<br/>Unity presentation: input, views, procedural art, audio, UI"]
-    Sandbox["Nova.DevSandbox<br/>developer tools, development builds only"]
-    Tests["Nova.Tests.EditMode<br/>NUnit"]
-
-    Domain --> Core
-    Data --> Core
-    Gameplay --> Domain
-    Gameplay --> Data
-    Sandbox --> Gameplay
-    Tests --> Domain
-
-    classDef pure fill:#eef0ff,stroke:#4f46e5;
-    class Core,Domain pure;
-```
-
-*Highlighted: engine-free assemblies (`noEngineReferences`).*
+| Assembly | Responsibility | Depends on | Uses Unity? |
+|---|---|---|---|
+| `Nova.Core` | Value types: grid positions, piece shapes, scoring settings | — | **No** (`noEngineReferences`) |
+| `Nova.Domain` | The rules: board, placement, line clears, combos, Flow, scoring, game session | Core | **No** (`noEngineReferences`) |
+| `Nova.Data` | ScriptableObject configuration | Core | Yes |
+| `Nova.Gameplay` | Presentation: input, views, procedural art, audio, UI | Core, Domain, Data | Yes |
+| `Nova.DevSandbox` | Developer tools — editor and development builds only | Core, Domain, Data, Gameplay | Yes |
+| `Nova.Tests.EditMode` | NUnit tests of the rules | Core, Domain | Test runner only (editor) |
 
 ## Engineering highlights
 
